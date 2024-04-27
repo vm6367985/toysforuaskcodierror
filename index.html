@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToysForU - Your Ultimate Toy Store</title>
+    <style>
+        /* CSS Styles */
+        /* Add your CSS styles for header, footer, product listings, and search bar here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .product-listings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to ToysForU - Your Ultimate Toy Store</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <input type="text" id="searchBar" aria-label="Search for toys..." placeholder="Search for toys..." title="Search for toys...">
+    <button id="searchButton" title="Search">Search</button>
+</header>
+<main>
+    <section class="product-listings">
+        <article class="product">
+            <img src="toy1.jpg" alt="Toy 1">
+            <h2>Toy 1</h2>
+            <p>Description of Toy 1.</p>
+            <button>Add to Cart</button>
+        </article>
+        <article class="product">
+            <img src="toy2.jpg" alt="Toy 2">
+            <h2>Toy 2</h2>
+            <p>Description of Toy 2.</p>
+            <button>Add to Cart</button>
+        </article>
+        <!-- Add more product listings here -->
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 ToysForU - Your Ultimate Toy Store</p>
+</footer>
+<script>
+    // JavaScript for search functionality
+    const searchButton = document.getElementById('searchButton');
+    searchButton.addEventListener('click', function() {
+        const searchTerm = document.getElementById('searchBar').value;
+        // Implement search functionality here
+    });
+</script>
+</body>
+</html>
